@@ -1,29 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Student Registration Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #444;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skills li, .projects .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1 1 250px;
+    }
+
+    .projects .project {
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <h2>Student Registration Form</h2>
-    <form action="#" method="post">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="Enter your email">
+  <!-- Header Section -->
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal website! I'm a web developer.</p>
+  </header>
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
+  <!-- About Me Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>Hello, I'm John Doe. I'm passionate about building web applications and creating beautiful, functional websites. I specialize in frontend development, with a focus on HTML, CSS, and JavaScript. I'm always eager to learn new technologies and enhance my skills. Welcome to my online portfolio!</p>
+  </section>
 
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
-</div>
+  <!-- Skills Section -->
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x300" alt="Project 1" />
+        <h3>Project 1: Personal Blog</h3>
+        <p>A simple blog website where users can read and post articles.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x300" alt="Project 2" />
+        <h3>Project 2: Task Manager</h3>
+        <p>A to-do list app to help users manage their tasks efficiently.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x300" alt="Project 3" />
+        <h3>Project 3: E-Commerce Website</h3>
+        <p>An online store where users can browse and purchase products.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out through any of the links below!</p>
+    <div class="contact">
+      <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 John Doe | All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
